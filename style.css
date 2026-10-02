@@ -196,7 +196,6 @@ header {
 }
 .uwuu4M {
   display: none;
-  
 }
 .uwuu4S {
   display: none;
@@ -660,7 +659,106 @@ header {
   display: none;
 }
 .tsegnvvdS {
+  display: none;
+}
+.uwuu6 {
+  gap: 20px;
   display: flex;
+  width: 4170px;
+  height: 258px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.item {
+  height: 100%;
+  width: 417px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slider 60s linear infinite;
+  animation-delay: calc((56.5s / 10) * (var(--item) - 6.5));
+}
+.aaw61 {
+  height: 100%;
+  width: 417px;
+  background: url(./Apple_files/1.jpg) center/cover no-repeat;
+}
+.aaw62 {
+  height: 100%;
+  width: 417px;
+  background: url(./Apple_files/2.jpg) center/cover no-repeat;
+}
+.aaw63 {
+  height: 100%;
+  width: 417px;
+  background: url(./Apple_files/3.jpg) center/cover no-repeat;
+}
+.aaw64 {
+  height: 100%;
+  width: 417px;
+  background: url(./Apple_files/4.jpg) center/cover no-repeat;
+}
+.aaw65 {
+  height: 100%;
+  width: 417px;
+  background: url(./Apple_files/5.jpg) center/cover no-repeat;
+}
+.aaw66 {
+  height: 100%;
+  width: 417px;
+  background: url(./Apple_files/6.jpg) center/cover no-repeat;
+}
+.aaw67 {
+  height: 100%;
+  width: 417px;
+  background: url(./Apple_files/7.jpg) center/cover no-repeat;
+}
+.aaw68 {
+  height: 100%;
+  width: 417px;
+  background: url(./Apple_files/8.jpg) center/cover no-repeat;
+}
+.aaw69 {
+  height: 100%;
+  width: 417px;
+  background: url(./Apple_files/9.jpg) center/cover no-repeat;
+}
+.aaw610 {
+  height: 100%;
+  width: 417px;
+  background: url(./Apple_files/10.jpg) center/cover no-repeat;
+}
+button {
+  opacity: 0;
+  transition: all 0.5s ease;
+  margin-top: 10px;
+  border-radius: 9999px;
+}
+@keyframes slider {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -417px;
+  }
+}
+
+.uwuu6:hover .item {
+  filter: grayscale(1);
+  animation-play-state: paused;
+}
+
+.uwuu6 .item:hover {
+  filter: grayscale(0);
+}
+
+.item:hover button {
+  opacity: 1;
+  margin-top: 0;
 }
 @media (max-width: 768px) {
   body {
